@@ -1,14 +1,18 @@
 "use client";
 import { useEffect, useState } from "react";
+import Swal from "sweetalert2";
 import {
   collection,
   onSnapshot,
   QuerySnapshot,
   DocumentData,
+  deleteDoc,
+  doc,
 } from "firebase/firestore";
 import AdminLayout from "../../components/admin/sidebar/AdminLayout";
 import { db } from "../../../services/firebase-config";
 import { Pagination } from "react-bootstrap";
+import toast from "react-hot-toast";
 
 type Book = {
   id: string;
@@ -54,6 +58,30 @@ export default function KelolaUcapan() {
     });
   };
 
+  const handleDelete = async (id: string, nama: string) => {
+    const result = await Swal.fire({
+      title: "Konfirmasi Hapus",
+      text: `Yakin mau hapus ucapan dari "${nama}"?`,
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#d33",
+      cancelButtonColor: "#6c757d",
+      confirmButtonText: "Ya, hapus",
+      cancelButtonText: "Batal",
+    });
+  
+    if (result.isConfirmed) {
+      try {
+        await deleteDoc(doc(db, "wedd", id));
+        toast.success(`Ucapan dari "${nama}" berhasil dihapus ✅`);
+      } catch (error) {
+        console.error("Gagal hapus ucapan:", error);
+        toast.error("❌ Gagal hapus ucapan, coba lagi.");
+      }
+    }
+  };
+  
+
   const totalPages = Math.ceil(ucapan.length / itemsPerPage);
   const paginatedUcapan = ucapan.slice(
     (currentPage - 1) * itemsPerPage,
@@ -83,10 +111,20 @@ export default function KelolaUcapan() {
                   key={u.id}
                   className="bg-white p-4 rounded-lg shadow border transform transition duration-300 hover:scale-[1.02]"
                 >
-                  <h2 className="font-semibold text-lg text-purple-700">
-                    {u.title}
-                  </h2>
-                  <p className="text-gray-700 italic mb-2">{u.author}</p>
+                  <div className="flex justify-between items-start">
+                    <div>
+                      <h2 className="font-semibold text-lg text-purple-700">
+                        {u.title}
+                      </h2>
+                      <p className="text-gray-700 italic mb-2">{u.author}</p>
+                    </div>
+                    <button
+                      onClick={() => handleDelete(u.id, u.title)}
+                      className="text-red-500 hover:text-red-700 text-sm"
+                    >
+                      ❌ Hapus
+                    </button>
+                  </div>
 
                   <span
                     className={`px-3 py-1 rounded-full text-sm ${
