@@ -20,40 +20,40 @@ export default function CalonPasangan() {
 
           <div className="pengantin">
             <Image
-              src="/img/prems.png"
+              src="/img/laks.png"
               className="rounded-circle "
               layout="responsive"
               width={50}
               height={50}
-              alt="Zulfa Syafiyah"
+              alt="Aryatno Prio Agustino"
             />
-            <p className="nama-pengantin">Zulfa Syafiyah Pratiwi</p>
+            <p className="nama-pengantin">Aryatno Prio Agustino</p>
             <p className="orangtua">
-              Putri dari Pak Cartab & Ibu Dewi Komalasari
+              Putra dari Bapak Radi (Alm) & Ibu Sudinah
             </p>
-            <a href="https://www.instagram.com/zulfasyapr/" className="sosmed">
+            {/* <a href="https://www.instagram.com/zulfasyapr/" className="sosmed">
               <FiInstagram />
-            </a>
+            </a> */}
           </div>
 
           <div className="icon-cincin">
-            <p className="nama-pasangan">Zulfa 💍 Trias</p>
+            <p className="nama-pasangan">Arya 💍 Ratna</p>
           </div>
 
           <div className="pengantin">
             <Image
-              src="/img/laks.png"
+              src="/img/prems.png"
               className="rounded-circle"
               layout="responsive"
               width={50}
               height={50}
-              alt="Trias Zaen Mutaqin"
+              alt="Ratna Juita"
             />
-            <p className="nama-pengantin">Trias Zaen Mutaqin</p>
-            <p className="orangtua">Putra dari Pak Asep Sudrajat & Ibu Upi</p>
-            <a href="https://www.instagram.com/tzm_1112/" className="sosmed">
+            <p className="nama-pengantin">Ratna Juita</p>
+            <p className="orangtua">Putri dari Bapak Bono (Alm) & Ibu Hasanah</p>
+            {/* <a href="https://www.instagram.com/tzm_1112/" className="sosmed">
               <FiInstagram />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

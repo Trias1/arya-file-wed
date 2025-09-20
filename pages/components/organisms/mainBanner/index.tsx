@@ -9,7 +9,7 @@ export default function MainBanner() {
   const [seconds, setSeconds] = useState(0);
 
   useEffect(() => {
-    const countDownDate = new Date("September 28, 2025 11:00:00").getTime();
+    const countDownDate = new Date("october 8, 2025 09:30:00").getTime();
 
     const x = setInterval(() => {
       const now = new Date().getTime();
@@ -42,11 +42,11 @@ export default function MainBanner() {
             className="banner-image"
           />
           <h3 className="pre-title">The Wedding of</h3>
-          <h1 className="titles">Zulfa & Trias</h1>
+          <h1 className="titles">Arya & Ratna</h1>
           <h4 className="text-invite">
             We invite you to celebrate our wedding
             <br />
-            <span className="mt-1">Ahad, 28 September 2025</span>
+            <span className="mt-1">Rabu, 8 Oktober 2025</span>
           </h4>
 
           <div className="heading">

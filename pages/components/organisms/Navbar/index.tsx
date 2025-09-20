@@ -28,7 +28,7 @@ export default function Navbar() {
       const sections = [
         "#mainbanner",
         "#calon",
-        "#lovestory",
+        // "#lovestory",
         "#weddingDate",
         "#maps",
         "#adab",
@@ -66,13 +66,13 @@ export default function Navbar() {
         >
           <BiUser />
         </a>
-        <a
+        {/* <a
           href="#lovestory"
           className={activeNav === "#lovestory" ? "active" : ""}
           title="Love Story"
         >
           <RiHeartLine />
-        </a>
+        </a> */}
         <a
           href="#weddingDate"
           className={activeNav === "#weddingDate" ? "active" : ""}

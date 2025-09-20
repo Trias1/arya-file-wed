@@ -49,15 +49,38 @@ export default function Amplop() {
   const amplop = [
     {
       qris: "",
-      bankLogo: "/img/blue-bca.png",
-      rekening: "006454754307",
-      atasNama: "Zulfa Syafiyah Pratiwi",
+      bankLogo: "",
+      namaBank: "BCA",
+      rekening: "4240422226",
+      atasNama: "AN YATIN",
     },
     {
       qris: "",
-      bankLogo: "/img/bca.png",
-      rekening: "7275226858",
-      atasNama: "Trias Zaen Mutaqin",
+      bankLogo: "",
+      namaBank: "BRI",
+      rekening: "660301016298534",
+      atasNama: "AN YATIN",
+    },
+    {
+      qris: "",
+      bankLogo: "",
+      namaBank: "Mandiri",
+      rekening: "1800006759601",
+      atasNama: "AN YATIN",
+    },
+    {
+      qris: "",
+      bankLogo: "",
+      namaBank: "BNI",
+      rekening: "1385562963",
+      atasNama: "AN YATIN",
+    },
+    {
+      qris: "",
+      bankLogo: "",
+      namaBank: "Gopay",
+      rekening: "087773252913",
+      atasNama: "ARYA P.B",
     },
   ];
 
@@ -81,28 +104,29 @@ export default function Amplop() {
                 src="/img/bck.png"
                 width={300}
                 height={300}
-                alt="Zulfa & Trias"
+                alt="Arya & Ratna"
                 className="img-rounded"
               />
             </div>
           </div>
 
           <div className="nama-pasangan">
-            <p>Zulfa & Trias</p>
+            <p>Arya & Ratna</p>
           </div>
 
           <div className="keluarga-container">
-            <div className="keluarga">
-              <h3>Keluarga Besar Wanita</h3>
-              <p>Pak Cartab & Ibu Dewi Komalasari</p>
-              <p>Keluarga Besar Pak Cartab</p>
-            </div>
-            <div className="keluarga">
-              <h3>Keluarga Besar Pria</h3>
-              <p>Pak Asep Sudrajat & Ibu Upi</p>
-              <p>Keluarga Besar Pak Sudrajat</p>
-            </div>
-          </div>
+  <div className="keluarga">
+    <h3>Keluarga Besar Pria</h3>
+    <p>Bapak Radi (Alm) & Ibu Sudinah</p>
+    <p>Keluarga Besar Bapak Radi</p>
+  </div>
+  <div className="keluarga">
+    <h3>Keluarga Besar Wanita</h3>
+    <p>Bapak Bono (Alm) & Ibu Hasanah</p>
+    <p>Keluarga Besar Bapak Bono</p>
+  </div>
+</div>
+
 
           <div className="btn-container">
             <button className="btn-kirim" onClick={openModal}>
@@ -147,13 +171,14 @@ export default function Amplop() {
                       className="qr-code"
                     />
                   )}
-                  <Image
+                  {/* <Image
                     src={item.bankLogo}
-                    alt="Bank Logo"
+                    alt=""
                     width={120}
                     height={50}
                     className="bank-logo"
-                  />
+                    /> */}
+                  <p className="rekening">{item.namaBank}</p>
                   <p className="rekening">{item.rekening}</p>
                   <p className="atas-nama">{item.atasNama}</p>
                   <button

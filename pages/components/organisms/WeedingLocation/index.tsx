@@ -15,12 +15,12 @@ export default function WeedingLocation() {
             </p>
 
             <div className="save-the-date">
-              <span className="day">Ahad</span>
+              <span className="day">Rabu</span>
               <div className="date-container">
-                <span className="date">28</span>
+                <span className="date">8</span>
                 <hr className="date-line" />
               </div>
-              <span className="month">September</span>
+              <span className="month">Oktober</span>
               <span className="year">2025</span>
             </div>
 
@@ -30,7 +30,7 @@ export default function WeedingLocation() {
                 <h3 className="card-title">Akad Nikah</h3>
                 <div className="event-detail">
                   <BsClock className="icon" />
-                  <h4>08.00 - 10.00 WIB</h4>
+                  <h4>09.30 - 10.30 WIB</h4>
                 </div>
               </div>
 
@@ -38,17 +38,16 @@ export default function WeedingLocation() {
                 <h3 className="card-title">Walimah</h3>
                 <div className="event-detail">
                   <BsClock className="icon" />
-                  <h4>11.00 - 14.00 WIB</h4>
+                  <h4>11.00 - Selesai </h4>
                 </div>
               </div>
             </div>
 
             <div className="event-detail">
               <GoLocation className="icon" />
-              <h4>Graha Umbaran</h4>
+              {/* <h4>cangkuang</h4> */}
               <h4>
-                Jl. Pangeran Cakrabuana No.102, Sendang, Kec. Sumber, Kabupaten
-                Cirebon, Jawa Barat 45611
+              Kp. Cangkuang Rt 02/04, Desa Bagendit, Kec. Banyuresmi, Kab. Garut
               </h4>
             </div>
           </div>

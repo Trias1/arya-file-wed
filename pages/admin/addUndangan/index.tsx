@@ -116,7 +116,7 @@ export default function ListUndangan() {
   // 📲 Generate teks undangan
 // 📲 Generate teks undangan (versi aman WA)
 const generateTeks = (name: string, slug: string) => {
-  const link = `https://trias-zulfa-wedding.vercel.app/trias-zulfa/undangan/${slug}`;
+  const link = `https://arya-ratna-wedding.vercel.app/arya-ratna/undangan/${slug}`;
 
   return `Kepada Yth. Bapak/Ibu/Saudara/i ${name}
 Di Tempat
@@ -129,9 +129,9 @@ Assalamualaikum Warahmatullahi Wabarakatuh
 
 Dengan hormat, kami mengundang Bapak/Ibu/Saudara/i sekalian untuk menghadiri acara pernikahan kami:
 
-*Trias Zaen Mutaqin & Zulfa Syafiyah Pratiwi*
+*Aryatno Prio Agustino & Ratna Juita*
 
-Hari/Tanggal : Ahad, 28 September 2025
+Hari/Tanggal : Rabu, 8 Oktober 2025
 Waktu        : 11.00 WIB – selesai
 Tempat       : Graha Umbaran
 Jl. Pangeran Cakrabuana No.102, Sendang, Kec. Sumber, Kabupaten Cirebon

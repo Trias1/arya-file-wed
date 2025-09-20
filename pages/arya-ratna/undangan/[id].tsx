@@ -167,7 +167,7 @@ export default function UndanganUserPage() {
       <Navbar />
       <MainBanner />
       <CalonPasangan />
-      <LoveStory />
+      {/* <LoveStory /> */}
       <WeedingLocation />
       <Maps />
       <AdabWalimah />
