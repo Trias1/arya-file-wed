@@ -1,0 +1,148 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.main-banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.banner-image {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid #fff;
+  margin: 0 auto 24px auto;
+  /* ✅ auto biar gambar center */
+  display: block;
+}
+
+.card-main {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin: 0 auto 2rem auto;
+  /* ✅ center + ada jarak bawah */
+  max-width: 900px;
+  /* ✅ samakan lebar semua card */
+  width: 100%;
+  text-align: center;
+}
+
+
+.pre-title {
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.titles {
+  font-size: 2.5rem;
+  /* font-weight: 700; */
+  margin: 0.5rem 0;
+  font-family: "Playball", cursive;
+}
+
+.text-invite {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  font-weight: 300;
+  color: #444;
+  line-height: 1.6;
+}
+
+.heading h3 {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  font-weight: 600;
+}
+
+.remaining-time {
+  margin-top: 1.5rem;
+}
+
+#clock {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.time-secs {
+  background: #c38d7a;
+  color: white;
+  width: 120px;
+  /* ✅ lebar fix */
+  height: 100px;
+  /* ✅ tinggi fix */
+  display: flex;
+  /* ✅ flex biar konten center */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.time-number {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  #clock {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    justify-items: center;
+  }
+
+  .card-main,
+  .calon-cards {
+    padding: 1.5rem 1rem;
+    border-radius: 12px;
+  }
+
+  .time-secs {
+    width: 100px;
+    /* lebih kecil biar muat di HP */
+    height: 80px;
+  }
+
+  .time-number {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .titles {
+    font-size: 1.8rem;
+    /* kecilin judul */
+  }
+
+  .pre-title {
+    font-size: 1.2rem;
+  }
+
+  .text-invite {
+    font-size: 1rem;
+  }
+
+  .time-secs {
+    width: 80px;
+    height: 70px;
+  }
+
+  .time-number {
+    font-size: 1.2rem;
+  }
+}
