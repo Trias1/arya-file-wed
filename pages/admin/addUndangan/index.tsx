@@ -133,8 +133,7 @@ Dengan hormat, kami mengundang Bapak/Ibu/Saudara/i sekalian untuk menghadiri aca
 
 Hari/Tanggal : Rabu, 8 Oktober 2025
 Waktu        : 11.00 WIB – selesai
-Tempat       : Graha Umbaran
-Jl. Pangeran Cakrabuana No.102, Sendang, Kec. Sumber, Kabupaten Cirebon
+Tempat       : Kp. Cangkuang Rt 02/04, Desa Bagendit, Kec. Banyuresmi, Kab. Garut
 
 Link undangan kami:
 ${link}

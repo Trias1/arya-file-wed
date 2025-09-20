@@ -47,8 +47,7 @@ Aryatno Prio Agustino & Ratna Juita
 
 Hari/Tanggal: Rabu, 8 Oktober 2025
 Waktu: Pukul 11.00 WIB – selesai
-Tempat: Graha Umbaran
- Jl. Pangeran Cakrabuana No.102, Sendang, Kec. Sumber, Kabupaten Cirebon, Jawa Barat 45611
+Tempat: Kp. Cangkuang Rt 02/04, Desa Bagendit, Kec. Banyuresmi, Kab. Garut
 
 📎 Berikut link undangan kami:
 ${link}
