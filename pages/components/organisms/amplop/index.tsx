@@ -50,6 +50,20 @@ export default function Amplop() {
     {
       qris: "",
       bankLogo: "",
+      namaBank: "BRI",
+      rekening: "415701043893530",
+      atasNama: "Ratna juita",
+    },
+    {
+      qris: "",
+      bankLogo: "",
+      namaBank: "BRI",
+      rekening: "002501182508502",
+      atasNama: "Ratna juita",
+    },
+    {
+      qris: "",
+      bankLogo: "",
       namaBank: "BCA",
       rekening: "4240422226",
       atasNama: "AN YATIN",
@@ -115,18 +129,17 @@ export default function Amplop() {
           </div>
 
           <div className="keluarga-container">
-  <div className="keluarga">
-    <h3>Keluarga Besar Pria</h3>
-    <p>Bapak Radi (Alm) & Ibu Sudinah</p>
-    <p>Keluarga Besar Bapak Radi</p>
-  </div>
-  <div className="keluarga">
-    <h3>Keluarga Besar Wanita</h3>
-    <p>Bapak Bono (Alm) & Ibu Hasanah</p>
-    <p>Keluarga Besar Bapak Bono</p>
-  </div>
-</div>
-
+            <div className="keluarga">
+              <h3>Keluarga Besar Pria</h3>
+              <p>Bapak Radi (Alm) & Ibu Sudinah</p>
+              <p>Keluarga Besar Bapak Radi</p>
+            </div>
+            <div className="keluarga">
+              <h3>Keluarga Besar Wanita</h3>
+              <p>Bapak Bono (Alm) & Ibu Hasanah</p>
+              <p>Keluarga Besar Bapak Bono</p>
+            </div>
+          </div>
 
           <div className="btn-container">
             <button className="btn-kirim" onClick={openModal}>

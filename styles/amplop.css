@@ -109,10 +109,10 @@
 
 /* 🔹 Isi Modal */
 .modal-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 kolom */
   gap: 1.2rem;
+  justify-items: center;
 }
 
 /* 🔹 Blok rekening */
@@ -216,6 +216,10 @@
     padding: 1rem !important;
   }
 
+  .modal-body {
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+  }
+
   .rekening-block {
     flex: 0 1 100%;
   }
@@ -229,6 +233,15 @@
   .card-amplop {
     padding: 1rem;
     margin-bottom: 1rem;
+  }
+
+  .modal-body {
+    grid-template-columns: 1fr; /* 1 kolom full */
+  }
+
+  .rekening-block {
+    width: 100%; /* biar full lebar */
+    max-width: none;
   }
 
   .card-amplop h3 {
