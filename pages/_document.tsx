@@ -27,8 +27,8 @@ export default function Document() {
 
         {/* Favicon & Meta */}
         <link rel="icon" href="/img/bck.png" />
-        <meta name="description" content="Weeding Arya & Ratna" />
-        <title>The Weeding of Arya & Ratna</title>
+        <meta name="description" content="Wedding Arya & Ratna" />
+        <title>The Wedding of Arya & Ratna</title>
       </Head>
       <body>
         <Main />
